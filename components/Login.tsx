@@ -30,7 +30,7 @@ export default function Login({}: LoginProps) {
 
         <button
           className="animate-pulse rounded-lg bg-yellow-500 p-5 font-bold"
-          onClick={authenticate}
+          onClick={() => authenticate()}
         >
           Login to the METAVERSE
         </button>
