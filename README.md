@@ -10,8 +10,6 @@ The database with authentication and all the offchain data transactions will be 
 
 The app is hosted via Vercel and accessible at any times [here](https://metaverse-live-chat.vercel.app)
 
-
 Yet todo:
+
 - replace tailwind with styled components
-- apply or design a loader 
-- consider reducing lines of code using useMoralis hook with usage of context or something else

@@ -23,7 +23,7 @@ export default function Messages({}: Props) {
       live: true,
     }
   );
-  console.log(data);
+
   return (
     <div className="pb-56">
       <div className="space-y-10 p-4">
