@@ -1,19 +1,17 @@
-import React from 'react'
-import Image from 'next/image'
-import loginImage from '../public/login.png'
-import { useMoralis } from 'react-moralis'
+import React from 'react';
+import Image from 'next/image';
+import loginImage from '../public/login.png';
+import { useMoralis } from 'react-moralis';
 
-type LoginProps = {}
-
-export default function Login({}: LoginProps) {
-  const { authenticate, isInitializing, isAuthenticating } = useMoralis()
+export default function Login() {
+  const { authenticate, isAuthenticating } = useMoralis();
 
   if (isAuthenticating) {
     return (
       <div className="z-999 flex justify-center align-middle">
         <h1>LOADING...</h1>
       </div>
-    )
+    );
   }
 
   return (
@@ -44,5 +42,5 @@ export default function Login({}: LoginProps) {
         />
       </div>
     </div>
-  )
+  );
 }
